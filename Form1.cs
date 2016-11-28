@@ -28,6 +28,7 @@ namespace alarm
                     this.TopMost = true;
                     var ss = listBox1.Items[i].ToString();
                     listBox1.Items.RemoveAt(i);
+                    listBox2.Items.Add(t.ToLocalTime() + " " + ss);
                     MessageBox.Show(ss);
                     this.TopMost = false;
                     return;

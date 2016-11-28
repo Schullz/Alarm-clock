@@ -36,6 +36,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonRemove = new System.Windows.Forms.Button();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.hoursNUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minutesNUD)).BeginInit();
             this.SuspendLayout();
@@ -47,31 +48,28 @@
             // 
             // hoursNUD
             // 
-            this.hoursNUD.Location = new System.Drawing.Point(16, 15);
-            this.hoursNUD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hoursNUD.Location = new System.Drawing.Point(12, 12);
             this.hoursNUD.Name = "hoursNUD";
-            this.hoursNUD.Size = new System.Drawing.Size(160, 22);
+            this.hoursNUD.Size = new System.Drawing.Size(120, 20);
             this.hoursNUD.TabIndex = 0;
             // 
             // minutesNUD
             // 
-            this.minutesNUD.Location = new System.Drawing.Point(184, 15);
-            this.minutesNUD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.minutesNUD.Location = new System.Drawing.Point(138, 12);
             this.minutesNUD.Maximum = new decimal(new int[] {
             59,
             0,
             0,
             0});
             this.minutesNUD.Name = "minutesNUD";
-            this.minutesNUD.Size = new System.Drawing.Size(160, 22);
+            this.minutesNUD.Size = new System.Drawing.Size(120, 20);
             this.minutesNUD.TabIndex = 1;
             // 
             // addB
             // 
-            this.addB.Location = new System.Drawing.Point(16, 47);
-            this.addB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addB.Location = new System.Drawing.Point(12, 38);
             this.addB.Name = "addB";
-            this.addB.Size = new System.Drawing.Size(100, 28);
+            this.addB.Size = new System.Drawing.Size(75, 23);
             this.addB.TabIndex = 2;
             this.addB.Text = "Add";
             this.addB.UseVisualStyleBackColor = true;
@@ -79,44 +77,55 @@
             // 
             // listBox1
             // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(16, 82);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox1.Location = new System.Drawing.Point(12, 67);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(515, 244);
+            this.listBox1.Size = new System.Drawing.Size(387, 199);
             this.listBox1.TabIndex = 3;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(353, 14);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Location = new System.Drawing.Point(265, 11);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(177, 22);
+            this.textBox1.Size = new System.Drawing.Size(134, 20);
             this.textBox1.TabIndex = 4;
             // 
             // buttonRemove
             // 
-            this.buttonRemove.Location = new System.Drawing.Point(123, 47);
+            this.buttonRemove.Location = new System.Drawing.Point(92, 38);
+            this.buttonRemove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonRemove.Name = "buttonRemove";
-            this.buttonRemove.Size = new System.Drawing.Size(91, 28);
+            this.buttonRemove.Size = new System.Drawing.Size(68, 23);
             this.buttonRemove.TabIndex = 5;
             this.buttonRemove.Text = "Remove";
             this.buttonRemove.UseVisualStyleBackColor = true;
             this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
             // 
+            // listBox2
+            // 
+            this.listBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(13, 273);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(386, 160);
+            this.listBox2.TabIndex = 6;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 336);
+            this.ClientSize = new System.Drawing.Size(411, 437);
+            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.buttonRemove);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.addB);
             this.Controls.Add(this.minutesNUD);
             this.Controls.Add(this.hoursNUD);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.hoursNUD)).EndInit();
@@ -135,6 +144,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button buttonRemove;
+        private System.Windows.Forms.ListBox listBox2;
     }
 }
 
